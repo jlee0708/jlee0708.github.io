@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이재성 | Jaesung Lee — 인하공업전문대학 화학생명공학과</title>
+<meta name="description" content="인하공업전문대학 화학생명공학과 이재성 교수. 계면 및 분산상 이동현상, 모세관 현상, 젖음, 레올로지 연구와 논문 목록, 강의자료.">
+<meta name="author" content="Jaesung Lee">
+
+<!-- Open Graph: 카카오톡·페이스북 등에서 링크 공유할 때 쓰입니다 -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="이재성 | Jaesung Lee — 인하공업전문대학 화학생명공학과">
+<meta property="og:description" content="계면 및 분산상 이동현상 연구 · 논문 목록 · 공개 강의자료">
+<meta property="og:url" content="https://jlee0708.github.io/">
+<link rel="canonical" href="https://jlee0708.github.io/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#fbfaf7;
+  --ink:#1d2127;
+  --ink-soft:#52585f;
+  --ink-faint:#8b9097;
+  --line:#e3dfd6;
+  --accent:#0f5c5c;
+  --accent-soft:#e8f0ef;
+  --card:#ffffff;
+  --max:860px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15181c; --ink:#e8e6e1; --ink-soft:#b0b5bb; --ink-faint:#7d838a;
+    --line:#2c3137; --accent:#6fc2b4; --accent-soft:#1c2a29; --card:#1c2026;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15181c; --ink:#e8e6e1; --ink-soft:#b0b5bb; --ink-faint:#7d838a;
+  --line:#2c3137; --accent:#6fc2b4; --accent-soft:#1c2a29; --card:#1c2026;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px;line-height:1.75;letter-spacing:-0.01em;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+a{color:var(--accent)}
+
+/* ── 언어 전환 ───────────────────────────── */
+.ko,.en{display:none}
+body[data-lang="ko"] .ko{display:revert}
+body[data-lang="en"] .en{display:revert}
+
+/* ── 상단 바 ─────────────────────────────── */
+.topbar{
+  position:sticky;top:0;z-index:20;
+  background:color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;gap:12px;height:56px}
+.mark{font-family:"Noto Serif KR",serif;font-weight:700;font-size:15px;letter-spacing:0.02em;margin-right:auto;white-space:nowrap}
+.mark a{color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:18px;font-size:14px}
+.nav a{color:var(--ink-soft);text-decoration:none;white-space:nowrap}
+.nav a:hover{color:var(--accent)}
+@media (max-width:680px){.nav{display:none}}
+.langbtn{
+  border:1px solid var(--line);background:var(--card);color:var(--ink-soft);
+  border-radius:999px;padding:5px 13px;font:inherit;font-size:13px;font-weight:500;
+  cursor:pointer;white-space:nowrap;
+}
+.langbtn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ── 헤더 ────────────────────────────────── */
+header.hero{padding:60px 0 44px;border-bottom:1px solid var(--line)}
+.hero-grid{display:flex;gap:28px;align-items:flex-start}
+.monogram{
+  flex:none;width:92px;height:92px;border-radius:50%;
+  background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;
+  font-family:"Noto Serif KR",serif;font-size:32px;font-weight:700;letter-spacing:0.02em;
+}
+h1{font-family:"Noto Serif KR",serif;font-weight:700;font-size:clamp(28px,5.2vw,38px);line-height:1.3;margin:0 0 6px}
+.role{color:var(--ink-soft);font-size:15px;margin:0 0 4px}
+.affil{color:var(--ink-faint);font-size:14px;margin:0 0 18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 10px;font-size:13.5px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--ink-soft);text-decoration:none;background:var(--card)}
+a.chip:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:560px){
+  header.hero{padding:40px 0 32px}
+  .hero-grid{flex-direction:column;gap:18px}
+  .monogram{width:72px;height:72px;font-size:26px}
+}
+
+/* ── 섹션 공통 ───────────────────────────── */
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+h2{font-family:"Noto Serif KR",serif;font-weight:700;font-size:21px;margin:0 0 6px;letter-spacing:-0.01em}
+h3.h3{font-size:15px;font-weight:700;margin:30px 0 12px;color:var(--ink)}
+.sub{color:var(--ink-faint);font-size:13.5px;margin:0 0 24px}
+p{margin:0 0 14px;color:var(--ink-soft)}
+p strong{color:var(--ink);font-weight:500}
+
+/* ── 이력 (기간 | 내용) ─────────────────── */
+dl.cv{margin:0;display:grid;grid-template-columns:150px 1fr;gap:12px 20px;font-size:14.5px}
+dl.cv dt{color:var(--ink-faint);font-size:13.5px;font-variant-numeric:tabular-nums;padding-top:1px}
+dl.cv dd{margin:0;color:var(--ink-soft)}
+dl.cv dd b{color:var(--ink);font-weight:500}
+dl.cv dd small{display:block;color:var(--ink-faint);font-size:13px}
+@media (max-width:560px){
+  dl.cv{grid-template-columns:1fr;gap:2px}
+  dl.cv dd{margin-bottom:12px}
+}
+
+/* ── 연구 주제 ───────────────────────────── */
+ul.topics{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:8px}
+ul.topics li{padding-left:18px;position:relative;color:var(--ink-soft);font-size:14.5px}
+ul.topics li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+ul.topics li strong{color:var(--ink);font-weight:500}
+.methods{margin-top:16px;font-size:14px}
+
+/* ── 논문 목록 ───────────────────────────── */
+ol.pubs{list-style:none;padding:0;margin:0;counter-reset:none}
+ol.pubs li{
+  display:grid;grid-template-columns:44px 1fr;gap:0 10px;
+  padding:12px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.65;
+}
+ol.pubs li:first-child{border-top:none}
+.pn{color:var(--ink-faint);font-size:13px;font-variant-numeric:tabular-nums;padding-top:2px;text-align:right;padding-right:6px}
+.pn .solo{color:var(--accent);font-weight:700}
+.pt{color:var(--ink);font-weight:500}
+.pa{color:var(--ink-soft)}
+.pj{color:var(--ink-soft)}
+.pj i{color:var(--ink)}
+.pd{font-size:13px}
+.pd a{text-decoration:none}
+.pd a:hover{text-decoration:underline}
+.tag{display:inline-block;font-size:11.5px;font-weight:500;border-radius:4px;padding:0 6px;margin-left:6px;background:var(--accent-soft);color:var(--accent);vertical-align:1px}
+.legend{font-size:13px;color:var(--ink-faint);margin:0 0 10px}
+
+/* ── 강의자료 (간결형) ───────────────────── */
+.courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.course{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:13px 16px;text-decoration:none;color:var(--ink);font-size:15px;font-weight:500;
+}
+a.course:hover{border-color:var(--accent);color:var(--accent)}
+.course span.arrow{color:var(--accent);font-size:14px}
+.course.soon{color:var(--ink-faint)}
+.course.soon span.arrow{color:var(--ink-faint);font-size:12px;font-weight:400}
+.blogs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-top:14px}
+.blog{display:flex;align-items:center;gap:12px;text-decoration:none;background:var(--accent-soft);border:1px solid transparent;border-radius:10px;padding:13px 16px}
+.blog:hover{border-color:var(--accent)}
+.blog .flag{font-size:20px;flex:none;line-height:1}
+.blog b{display:block;color:var(--ink);font-size:14px;font-weight:700}
+.blog small{color:var(--ink-soft);font-size:12.5px}
+.license{font-size:13px;color:var(--ink-faint);margin:16px 0 0}
+
+/* ── 푸터 ────────────────────────────────── */
+footer{padding:36px 0 56px;color:var(--ink-faint);font-size:13px}
+footer a{color:var(--ink-soft)}
+footer p{color:inherit;font-size:13px;margin:0 0 6px}
+</style>
+</head>
+
+<body data-lang="ko">
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="mark">
+      <a href="#top"><span class="ko">이재성</span><span class="en">Jaesung Lee</span></a>
+    </div>
+    <nav class="nav">
+      <a href="#research"><span class="ko">연구</span><span class="en">Research</span></a>
+      <a href="#publications"><span class="ko">논문</span><span class="en">Publications</span></a>
+      <a href="#cv"><span class="ko">이력</span><span class="en">CV</span></a>
+      <a href="#lectures"><span class="ko">강의자료</span><span class="en">Lectures</span></a>
+      <a href="#contact"><span class="ko">연락처</span><span class="en">Contact</span></a>
+    </nav>
+    <button class="langbtn" id="langbtn" type="button">
+      <span class="ko">English</span><span class="en">한국어</span>
+    </button>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="monogram">JL</div>
+    <div>
+      <h1><span class="ko">이재성</span><span class="en">Jaesung Lee</span></h1>
+      <p class="role">
+        <span class="ko">화학생명공학과 교수 · Ph.D. (UC San Diego)</span>
+        <span class="en">Professor, Chemical &amp; Biological Engineering · Ph.D., UC San Diego</span>
+      </p>
+      <p class="affil">
+        <span class="ko">인하공업전문대학, 인천</span>
+        <span class="en">Inha Technical College, Incheon, Republic of Korea</span>
+      </p>
+      <div class="meta">
+        <a class="chip" href="mailto:JLee@inhatc.ac.kr">JLee@inhatc.ac.kr</a>
+        <a class="chip" href="#publications"><span class="ko">논문 14편</span><span class="en">14 publications</span></a>
+        <a class="chip" href="https://englee-103.tistory.com" target="_blank" rel="noopener"><span class="ko">한글 블로그</span><span class="en">Korean blog</span></a>
+        <a class="chip" href="https://engteacher.tistory.com" target="_blank" rel="noopener"><span class="ko">영문 블로그</span><span class="en">English blog</span></a>
+        <!-- TODO: Google Scholar / ORCID 주소가 있으면 여기에 chip을 추가하세요 -->
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ── 연구 ─────────────────────────────── -->
+<section id="research">
+  <div class="wrap">
+    <h2><span class="ko">연구</span><span class="en">Research</span></h2>
+    <p class="sub">
+      <span class="ko">계면 및 분산상 이동현상 — 정합 점근 전개, 변분법, 비평형 열역학</span>
+      <span class="en">Interfacial and dispersed-phase transport — matched asymptotics, variational methods, non-equilibrium thermodynamics</span>
+    </p>
+
+    <ul class="topics">
+      <li>
+        <span class="ko"><strong>모세관 현상과 부유 입자</strong> — 계면에 뜬 구형·회전타원체 입자의 메니스커스 점근해, 입자 간 측면 모세관력. 부유선별(froth flotation)과 계면 자기조립에 응용</span>
+        <span class="en"><strong>Capillarity and floating particles</strong> — meniscus asymptotics for spherical and spheroidal particles at a fluid interface, and lateral capillary forces between particle pairs; applications to froth flotation and interfacial self-assembly</span>
+      </li>
+      <li>
+        <span class="ko"><strong>불균일 표면에서의 젖음</strong> — 젖음성 무질서에 의한 접촉선 고정·이력 현상과 느린 완화. 지중 CO₂·수소 저장의 모세관 트래핑과 연결</span>
+        <span class="en"><strong>Wetting on heterogeneous surfaces</strong> — contact-line pinning, hysteresis and slow relaxation driven by wettability disorder; linked to capillary trapping in subsurface CO₂ and H₂ storage</span>
+      </li>
+      <li>
+        <span class="ko"><strong>유동의 비평형 열역학</strong> — 자유표면 유하액막의 엔트로피 생성, 이를 이용한 유해가스 혼합시간 기준 (공정안전)</span>
+        <span class="en"><strong>Non-equilibrium thermodynamics of flow</strong> — entropy production in free-surface falling films, and an entropy-based mixing-time criterion for hazardous gas releases (process safety)</span>
+      </li>
+      <li>
+        <span class="ko"><strong>입자 레올로지</strong> — μ(I) 모델의 안정성과 압축성에 의한 정칙화 (J. D. Goddard 교수와 공동연구)</span>
+        <span class="en"><strong>Granular rheology</strong> — stability of the μ(I) model and its regularization by compressibility (with Prof. J. D. Goddard)</span>
+      </li>
+      <li>
+        <span class="ko"><strong>계면·전기화학 이동현상</strong> — 계면활성제가 있는 액적·기포의 변형, 전착 공정에서의 입자 공석 모델</span>
+        <span class="en"><strong>Interfacial and electrochemical transport</strong> — surfactant-laden drops and bubbles, and models of particle electrocodeposition</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── 논문 ─────────────────────────────── -->
+<section id="publications">
+  <div class="wrap">
+    <h2><span class="ko">논문</span><span class="en">Publications</span></h2>
+    <p class="sub">
+      <span class="ko">국제 학술지 게재 논문 (최신순)</span>
+      <span class="en">Refereed journal articles, most recent first</span>
+    </p>
+    <p class="legend">
+      <span class="ko"><b style="color:var(--accent)">∗</b> 단독저자</span>
+      <span class="en"><b style="color:var(--accent)">∗</b> sole author</span>
+    </p>
+
+    <ol class="pubs">
+      <li>
+        <span class="pn"><span class="solo">∗</span>14</span>
+        <span>
+          <span class="pt">Two-particle lateral capillary force from matched asymptotic expansions: sphere and oblate spheroid</span><br>
+          <span class="pa">J. Lee</span> · <span class="pj"><i>Langmuir</i> (2026)</span><span class="tag"><span class="ko">게재 확정</span><span class="en">in press</span></span><br>
+          <span class="pd"><a href="https://doi.org/10.1021/acs.langmuir.6c02624" target="_blank" rel="noopener">doi:10.1021/acs.langmuir.6c02624</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn"><span class="solo">∗</span>13</span>
+        <span>
+          <span class="pt">Asymptotic analysis of an oblate spheroidal particle floating at a fluid interface</span><br>
+          <span class="pa">J. Lee</span> · <span class="pj"><i>Physics of Fluids</i> 38(7), 072103 (2026)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1063/5.0341509" target="_blank" rel="noopener">doi:10.1063/5.0341509</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn"><span class="solo">∗</span>12</span>
+        <span>
+          <span class="pt">Energy landscape and disorder-induced slow relaxation of droplets on heterogeneous wetting surfaces</span><br>
+          <span class="pa">J. Lee</span> · <span class="pj"><i>Physics of Fluids</i> 38(6), 062118 (2026)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1063/5.0335528" target="_blank" rel="noopener">doi:10.1063/5.0335528</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn">11</span>
+        <span>
+          <span class="pt">Onset and risk period of functional sound tooth loss: a hyperbolic tangent model</span><br>
+          <span class="pa">J. Lee, J. W. Lee</span> · <span class="pj"><i>International Dental Journal</i>, 109686 (2026)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1016/j.identj.2026.109686" target="_blank" rel="noopener">doi:10.1016/j.identj.2026.109686</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn"><span class="solo">∗</span>10</span>
+        <span>
+          <span class="pt">An entropy-production framework for hazardous gas mixing times in closed and open systems</span><br>
+          <span class="pa">J. Lee</span> · <span class="pj"><i>Process Safety and Environmental Protection</i> 215, 109172 (2026)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1016/j.psep.2026.109172" target="_blank" rel="noopener">doi:10.1016/j.psep.2026.109172</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn"><span class="solo">∗</span>9</span>
+        <span>
+          <span class="pt">Equilibrium shape for 2D asymmetric cylindrical droplet on heterogeneous surface</span><br>
+          <span class="pa">J. Lee</span> · <span class="pj"><i>ChemEngineering</i> 10(1), 4 (2026)</span><br>
+          <span class="pd"><a href="https://doi.org/10.3390/chemengineering10010004" target="_blank" rel="noopener">doi:10.3390/chemengineering10010004</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn"><span class="solo">∗</span>8</span>
+        <span>
+          <span class="pt">Asymptotic solution on spherical floating particle</span><br>
+          <span class="pa">J. Lee</span> · <span class="pj"><i>ChemEngineering</i> 9(2), 28 (2025)</span><br>
+          <span class="pd"><a href="https://doi.org/10.3390/chemengineering9020028" target="_blank" rel="noopener">doi:10.3390/chemengineering9020028</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn">7</span>
+        <span>
+          <span class="pt">Regularization by compressibility of the μ(I) model of dense granular flow</span><br>
+          <span class="pa">J. D. Goddard, J. Lee</span> · <span class="pj"><i>Physics of Fluids</i> 30(7), 073302 (2018)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1063/1.5040776" target="_blank" rel="noopener">doi:10.1063/1.5040776</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn"><span class="solo">∗</span>6</span>
+        <span>
+          <span class="pt">The static profile for a floating particle</span><br>
+          <span class="pa">J. Lee</span> · <span class="pj"><i>Colloids and Interfaces</i> 2(2), 18 (2018)</span><br>
+          <span class="pd"><a href="https://doi.org/10.3390/colloids2020018" target="_blank" rel="noopener">doi:10.3390/colloids2020018</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn"><span class="solo">∗</span>5</span>
+        <span>
+          <span class="pt">Entropy production on the gravity-driven flow with free surface down an inclined plane subjected to constant temperature</span><br>
+          <span class="pa">J. Lee</span> · <span class="pj"><i>Entropy</i> 20(4), 293 (2018)</span><br>
+          <span class="pd"><a href="https://doi.org/10.3390/e20040293" target="_blank" rel="noopener">doi:10.3390/e20040293</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn">4</span>
+        <span>
+          <span class="pt">On the stability of the μ(I) rheology for granular flow</span><br>
+          <span class="pa">J. D. Goddard, J. Lee</span> · <span class="pj"><i>Journal of Fluid Mechanics</i> 833, 302–331 (2017)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1017/jfm.2017.651" target="_blank" rel="noopener">doi:10.1017/jfm.2017.651</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn">3</span>
+        <span>
+          <span class="pt">A model of electrocodeposition on a rotating cylinder electrode</span><br>
+          <span class="pa">J. Lee, J. B. Talbot</span> · <span class="pj"><i>Journal of The Electrochemical Society</i> 154(2), D70–D77 (2007)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1149/1.2398819" target="_blank" rel="noopener">doi:10.1149/1.2398819</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn">2</span>
+        <span>
+          <span class="pt">Effect of surfactants on the deformation of drops and bubbles in Navier–Stokes flow</span><br>
+          <span class="pa">J. Lee, C. Pozrikidis</span> · <span class="pj"><i>Computers &amp; Fluids</i> 35(1), 43–60 (2006)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1016/j.compfluid.2004.11.004" target="_blank" rel="noopener">doi:10.1016/j.compfluid.2004.11.004</a></span>
+        </span>
+      </li>
+      <li>
+        <span class="pn">1</span>
+        <span>
+          <span class="pt">Simulation of particle incorporation during electrodeposition process: primary and secondary current distributions</span><br>
+          <span class="pa">J. Lee, J. B. Talbot</span> · <span class="pj"><i>Journal of The Electrochemical Society</i> 152(10), C706–C715 (2005)</span><br>
+          <span class="pd"><a href="https://doi.org/10.1149/1.2032429" target="_blank" rel="noopener">doi:10.1149/1.2032429</a></span>
+        </span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ── 이력 ─────────────────────────────── -->
+<section id="cv">
+  <div class="wrap">
+    <h2><span class="ko">이력</span><span class="en">Curriculum Vitae</span></h2>
+    <p class="sub">
+      <span class="ko">학력 · 경력 · 국제협력</span>
+      <span class="en">Education · Appointments · International cooperation</span>
+    </p>
+
+    <h3 class="h3"><span class="ko">학력</span><span class="en">Education</span></h3>
+    <dl class="cv">
+      <dt>2001.09 – 2005.02</dt>
+      <dd>
+        <b>Ph.D., Chemical Engineering</b> — University of California, San Diego
+        <small><span class="ko">학위논문</span><span class="en">Dissertation</span>: <i>Simulation of Electrocodeposition</i> · Advisors: C. Pozrikidis, J. D. Goddard, J. B. Talbot</small>
+      </dd>
+      <dt>1997.10 – 1998.09</dt>
+      <dd><span class="ko"><b>교환학생</b> — 요코하마국립대학교, 일본</span><span class="en"><b>Exchange student</b> — Yokohama National University, Japan</span></dd>
+      <dt>1996.03 – 1999.02</dt>
+      <dd>
+        <span class="ko"><b>공학석사, 화학공학</b> — 서울시립대학교</span><span class="en"><b>M.S., Chemical Engineering</b> — University of Seoul</span>
+        <small><span class="ko">학위논문</span><span class="en">Thesis</span>: <i>Dynamics of thin film flow with the effects of heat transfer</i></small>
+      </dd>
+      <dt>1990.03 – 1996.02</dt>
+      <dd><span class="ko"><b>공학사, 화학공학</b> — 서울시립대학교</span><span class="en"><b>B.S., Chemical Engineering</b> — University of Seoul</span></dd>
+    </dl>
+
+    <h3 class="h3"><span class="ko">경력</span><span class="en">Appointments and experience</span></h3>
+    <dl class="cv">
+      <dt>2010.03 – <span class="ko">현재</span><span class="en">present</span></dt>
+      <dd><span class="ko"><b>교수</b> — 인하공업전문대학 화학생명공학과</span><span class="en"><b>Professor</b> — Dept. of Chemical &amp; Biological Engineering, Inha Technical College</span></dd>
+      <dt>2009.02 – 2010.02</dt>
+      <dd><span class="ko"><b>SK이노베이션</b> — 신기술개발사업팀</span><span class="en"><b>SK Innovation</b> — New Technology Development Team</span></dd>
+      <dt>2005.08 – 2009.01</dt>
+      <dd><span class="ko"><b>LG마이크론</b> (현 LG이노텍) — 연구소 / 전략기획팀</span><span class="en"><b>LG Micron</b> (now LG Innotek) — R&amp;D Center / Strategic Planning</span></dd>
+      <dt>2005.03 – 2005.07</dt>
+      <dd><span class="ko"><b>삼성SDI</b></span><span class="en"><b>Samsung SDI</b></span></dd>
+      <dt>2000.04 – 2001.04</dt>
+      <dd><span class="ko"><b>조교</b> — 서울시립대학교 재료공학과</span><span class="en"><b>Teaching assistant</b> — Dept. of Materials Science &amp; Engineering, University of Seoul</span></dd>
+      <dt>1999.01 – 1999.10</dt>
+      <dd><span class="ko"><b>위촉연구원</b> — 한국에너지기술연구소</span><span class="en"><b>Contract researcher</b> — Korea Institute of Energy Research</span></dd>
+    </dl>
+
+    <h3 class="h3"><span class="ko">국제협력 · 교육</span><span class="en">International cooperation and teaching</span></h3>
+    <dl class="cv">
+      <dt>2023.04 – 2028.03</dt>
+      <dd>
+        <span class="ko"><b>교육부 국제교류 선도대학 육성사업(LUPIC) 책임자</b> — 키르기스스탄 ODA 교육협력</span>
+        <span class="en"><b>Director, Leading University Project for International Cooperation (LUPIC)</b> — Ministry of Education ODA programme, Kyrgyz Republic</span>
+        <small><span class="ko">현지 대학 컴퓨터공학과 신설, 교원 파견·역량 강화, 기자재 지원, 현지 고등학생 대상 AI 로봇 코딩교육</span><span class="en">Establishing a Computer Science department at a partner university; faculty dispatch and capacity building; equipment support; AI-robot coding education for local high-school students</span></small>
+      </dd>
+      <dt>2016 – <span class="ko">현재</span><span class="en">present</span></dt>
+      <dd>
+        <span class="ko"><b>캡스톤디자인 지도</b> — 매년 한국화학공학회 창의설계 경진대회(전문대학부) 참가</span>
+        <span class="en"><b>Capstone design supervision</b> — annual entry in the KIChE Creative Design Competition (college division)</span>
+      </dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ── 강의자료 ─────────────────────────── -->
+<section id="lectures">
+  <div class="wrap">
+    <h2><span class="ko">강의자료</span><span class="en">Lecture notes</span></h2>
+    <p class="sub">
+      <span class="ko">과목별 목차로 연결됩니다. 누구나 자유롭게 보실 수 있습니다.</span>
+      <span class="en">Each links to a course table of contents. Open to everyone.</span>
+    </p>
+
+    <div class="courses">
+      <a class="course" href="https://englee-103.tistory.com/36" target="_blank" rel="noopener">
+        <span class="ko">공업수학</span><span class="en">Engineering Mathematics</span><span class="arrow">→</span>
+      </a>
+      <a class="course" href="https://englee-103.tistory.com/37" target="_blank" rel="noopener">
+        <span class="ko">이동현상</span><span class="en">Transport Phenomena</span><span class="arrow">→</span>
+      </a>
+      <a class="course" href="https://englee-103.tistory.com/38" target="_blank" rel="noopener">
+        <span class="ko">공학의 기초</span><span class="en">Engineering Fundamentals</span><span class="arrow">→</span>
+      </a>
+      <div class="course soon">
+        <span class="ko">대학수학</span><span class="en">University Mathematics</span>
+        <span class="arrow"><span class="ko">준비 중</span><span class="en">soon</span></span>
+      </div>
+    </div>
+
+    <div class="blogs">
+      <a class="blog" href="https://englee-103.tistory.com" target="_blank" rel="noopener">
+        <span class="flag">📘</span>
+        <span><b><span class="ko">한글 블로그</span><span class="en">Korean blog</span></b><small>englee-103.tistory.com</small></span>
+      </a>
+      <a class="blog" href="https://engteacher.tistory.com" target="_blank" rel="noopener">
+        <span class="flag">📗</span>
+        <span><b><span class="ko">영문 블로그</span><span class="en">English blog</span></b><small>engteacher.tistory.com</small></span>
+      </a>
+    </div>
+
+    <p class="license">
+      <span class="ko">출처만 밝혀 주시면 수업·스터디에 자유롭게 쓰실 수 있습니다 (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ko" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>). 오류 제보는 메일로 부탁드립니다.</span>
+      <span class="en">Free to use in classes and study groups with a link back (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>). Corrections welcome by email.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ── 연락처 ───────────────────────────── -->
+<section id="contact">
+  <div class="wrap">
+    <h2><span class="ko">연락처</span><span class="en">Contact</span></h2>
+    <p class="sub">Contact</p>
+    <p>
+      <span class="ko">인하공업전문대학 화학생명공학과<br>(22212) 인천광역시 미추홀구 인하로 100<br>Tel. 032-870-2274</span>
+      <span class="en">Department of Chemical and Biological Engineering, Inha Technical College<br>100 Inha-ro, Michuhol-gu, Incheon 22212, Republic of Korea<br>Tel. +82-32-870-2274</span>
+    </p>
+    <div class="meta">
+      <a class="chip" href="mailto:JLee@inhatc.ac.kr">JLee@inhatc.ac.kr</a>
+      <a class="chip" href="https://www.inhatc.ac.kr" target="_blank" rel="noopener"><span class="ko">인하공업전문대학</span><span class="en">Inha Technical College</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="year">2026</span> Jaesung Lee.
+      <span class="ko">강의자료는 CC BY-NC-SA 4.0 조건으로 제공됩니다.</span>
+      <span class="en">Lecture notes licensed under CC BY-NC-SA 4.0.</span>
+    </p>
+    <p>
+      <a href="https://englee-103.tistory.com" target="_blank" rel="noopener">englee-103.tistory.com</a> ·
+      <a href="https://engteacher.tistory.com" target="_blank" rel="noopener">engteacher.tistory.com</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var body = document.body;
+  var btn  = document.getElementById('langbtn');
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch(e){}
+  if (!saved) {
+    saved = (navigator.language || '').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'en';
+  }
+  setLang(saved);
+  function setLang(l){
+    body.setAttribute('data-lang', l);
+    document.documentElement.setAttribute('lang', l);
+    try { localStorage.setItem('lang', l); } catch(e){}
+  }
+  btn.addEventListener('click', function(){
+    setLang(body.getAttribute('data-lang') === 'ko' ? 'en' : 'ko');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
